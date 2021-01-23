@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/stage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/body">
+
+        <ImageView
+            android:id="@+id/center_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/window" />
+
+        <ImageView
+            android:id="@+id/left_window"
+            android:layout_width="48dp"
+            android:layout_height="58dp"
+            android:layout_margin="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/center_window"
+            android:src="@drawable/window" />
+
+        <ImageView
+            android:id="@+id/right_window"
+            android:layout_width="48dp"
+            android:layout_height="58dp"
+            android:layout_margin="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/center_window"
+            android:src="@drawable/window" />
+    </RelativeLayout>
+</RelativeLayout>
