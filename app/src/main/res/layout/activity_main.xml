@@ -10,7 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/ScrollView"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,9 +25,16 @@
                 android:id="@+id/roof"
                 android:layout_width="300dp"
                 android:layout_height="154dp"
-                android:layout_above="@+id/sixth_stage"
-                android:layout_centerHorizontal="true"
                 android:background="@drawable/roof">
+                <ImageView
+                    android:id="@+id/roof_window"
+                    android:layout_width="48dp"
+                    android:layout_height="58dp"
+                    android:layout_margin="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:src="@drawable/window" />
             </RelativeLayout>
 
             <LinearLayout
@@ -33,39 +43,31 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <include
-                    android:id="@+id/seventh_stage"
-                    android:layout_width="240dp"
-                    android:layout_height="134dp"
-                    layout="@layout/stage"/>
-
-                <include
-                    android:id="@+id/sixth_stage"
-                    android:layout_width="240dp"
-                    android:layout_height="134dp"
-                    layout="@layout/stage"/>
-
-                <include
                     android:id="@+id/fifth_stage"
                     android:layout_width="240dp"
                     android:layout_height="134dp"
+                    android:visibility="gone"
                     layout="@layout/stage"/>
 
                 <include
                     android:id="@+id/fourth_stage"
                     android:layout_width="240dp"
                     android:layout_height="134dp"
+                    android:visibility="gone"
                     layout="@layout/stage"/>
 
                 <include
                     android:id="@+id/third_stage"
                     android:layout_width="240dp"
                     android:layout_height="134dp"
+                    android:visibility="gone"
                     layout="@layout/stage"/>
 
                 <include
                     android:id="@+id/second_stage"
                     android:layout_width="240dp"
                     android:layout_height="134dp"
+                    android:visibility="gone"
                     layout="@layout/stage"/>
             </LinearLayout>
 
